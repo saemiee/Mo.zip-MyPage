@@ -1,0 +1,61 @@
+body {
+  width: 100%;
+  font-family: 'Inter' sans-serif;
+  position: relative;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.inner {
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* HEADER */
+header {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: .5px solid #000;
+}
+
+header > .inner {
+  height: 110px;
+}
+
+header .inner .logo {
+  height: 40px;
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  margin: auto;
+  background-color: #fff;
+}
+
+header .inner .menu {
+  height: 40px;
+  position: absolute;
+  top: 35px;
+  right: 100px;
+  margin: auto;
+  background-color: #fff;
+  font-size: 22px;
+  font-weight: 600px;
+  display: flex;
+}
+
+header .inner .menu .logout {
+  cursor: pointer;
+}
+
