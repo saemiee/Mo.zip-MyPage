@@ -13,8 +13,28 @@ a {
   color: #000;
 }
 
+button {
+  background-color: #7EA0E5;
+  padding: 6px 17px;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #7EA0E5;
+  transition: .4s;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #7EA0E5;
+  color: #7EA0E5;
+}
+
 .inner {
-  width: 1300px;
+  width: 1450px;
   margin: 0 auto;
   position: relative;
 }
@@ -23,39 +43,137 @@ a {
 header {
   background-color: #fff;
   width: 100%;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   border-bottom: .5px solid #000;
-}
-
-header > .inner {
-  height: 110px;
+  z-index: 9;
+  position: sticky;
+  height: 102px;
 }
 
 header .inner .logo {
   height: 40px;
   position: absolute;
-  top: 35px;
-  left: 0px;
+  top: 44px;
+  left: 0;
+  bottom: 0;
   margin: auto;
   background-color: #fff;
 }
 
-header .inner .menu {
+header .inner .logout {
   height: 40px;
   position: absolute;
   top: 35px;
   right: 100px;
   margin: auto;
   background-color: #fff;
+  cursor: pointer;
   font-size: 22px;
-  font-weight: 600px;
+  font-weight: 600;
+}
+
+.user {
+  /* background-color: hotpink; */
+  height: 180px;
+}
+
+.user > .inner{
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  display: flex;
+  padding-left: 30px;
+}
+
+.user .userName{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.user .userHi{
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+
+.contentbox {
+  /* background-color: orange; */
+  display: flex;
+  width: 1390px;
+  position: absolute;
+  left: 150px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #17469B;
+  position: absolute;
+  top: 36px;
+  left: 36px;
+}
+
+.listbox {
+  background-color: #fff;
+  width: 600px;
+  height: 64px;
+  border-radius: 6px;
   display: flex;
 }
 
-header .inner .menu .logout {
-  cursor: pointer;
+.writing {
+  background-color: #D7E3FB;
+  width: 670px;
+  height: 600px;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 5px 5px 10px 5px #dbdcde;
 }
+
+.writing .listbox {
+  position: absolute;
+  top: 96px;
+  left: 36px;
+}
+
+.listbox .listtitle {
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.listbox .editbtn {
+  position: absolute;
+  top: 18px;
+  right: 84px;
+}
+
+.listbox .removebtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+}
+
+.contentbox .apply {
+  background-color: #D7E3FB;
+  width: 670px;
+  height: 600px;
+  border-radius: 16px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.apply .listbox {
+  position: absolute;
+  top: 96px;
+  left: 36px;
+}
+
+
 
