@@ -136,7 +136,7 @@ header .inner .logout {
 
 .writing .listbox {
   position: absolute;
-  top: 96px;
+  top: 96px; 
   left: 36px;
 }
 
@@ -160,7 +160,7 @@ header .inner .logout {
   right: 18px;
 }
 
-.contentbox .apply {
+.apply {
   background-color: #D7E3FB;
   width: 670px;
   height: 600px;
@@ -173,6 +173,17 @@ header .inner .logout {
   position: absolute;
   top: 96px;
   left: 36px;
+}
+
+.contentbox .navigate {
+  display: flex;
+  position: absolute;
+  top: 550px;
+  left: 310px;
+}
+
+.contentbox .navigate .material-symbols-outlined {
+  cursor: pointer;
 }
 
 
